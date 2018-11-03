@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" routerLink="/home" style="color:#FF9B0A;font-family: 'Orbitron', sans-serif;">FamGO</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a class="navbar-brand" routerLink="/home" style="color:#FF9B0A;font-family: 'Orbitron', sans-serif;">New Account</a>
+    </form>
+  </div>
+</nav>
+<div class="container">
+  <p>
+    Sign in
+  </p>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter you username">
+      <mat-icon matSuffix>verified_user</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
+    <form>
+      <div class="row">
+        <div class="col">
+          <mat-checkbox>Remember me</mat-checkbox>
+        </div>
+        <div class="col">
+          <button mat-raised-button class="example-full-width" (click)="btnLogin()" color="primary">Login</button>
+        </div>
+      </div>
+    </form>
+  </form><br><br>
+  <hr>
+</div>

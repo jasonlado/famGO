@@ -1,0 +1,79 @@
+.container-fluid {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ),  url("../../assets/img/car4.jpg");
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: white;
+    float: left;
+}
+.help {
+    font-size: 50px;
+}
+#containerform {
+    width: 80%;
+    background: #212121;
+    height: 89.5%;
+    overflow: hidden;
+    opacity: .8;
+    padding-right: 3em;
+    padding: 1em;
+    color: white;
+    font-size: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+   }
+
+   #section2 {
+    background: #ffffff ;
+    width: 100%;
+    height: 10% !important;
+    color: black;
+    padding-left: 6em;
+    padding-right: 2em;
+
+   }
+   .fontWhoWeAre {
+    font-family: 'Orbitron', sans-serif;
+   }
+  
+#register:hover {
+    box-shadow: 1px 1px 10px greenyellow !important;
+    animation: 3s !important;
+}
+
+#section3 {
+    margin-top: -250px ;
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+    color: #ffffff !important;
+    padding-left: 5em !important;
+    padding-right: 3em !important;
+}
+agm-map {
+    height: 300px;
+  }
+
+  .list-group-item {
+    color: #292931 !important;
+    background: #212121 !important;
+    border:none;
+    border-bottom: 2px solid #4CC5F7;
+    color: white !important;
+  }
+
+  .list-group {
+    width: 80%;
+    background: #212121;
+    height: 89.5%;
+    overflow: hidden;
+    opacity: .8;
+    padding-right: 3em;
+    padding: 1em;
+    color: white;
+    font-size: 15px;
+   
+  }

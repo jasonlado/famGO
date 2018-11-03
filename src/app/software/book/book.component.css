@@ -1,0 +1,34 @@
+#bookingForm {
+    box-shadow: 1px 1px 5px;
+    width: 100%;
+    padding-left:3em;
+    padding-right:2em;
+    padding-top: 3em;
+    outline: none !important;
+
+}
+.example-tab-icon {
+    margin-right: 8px;
+  }
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  mat-datepicker-toggle {
+    outline: none !important;
+  }
+  .card{
+    border:none !important;
+    font-size: 13px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    
+    
+  }
+  

@@ -1,0 +1,341 @@
+<mat-toolbar> <img src="../../../assets/img/car.png"> &nbsp;Book my car</mat-toolbar>
+<div class="container-fluid">
+
+    <mat-tab-group>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">bookmark</mat-icon>
+                Booking Section
+            </ng-template> <br>
+            <div class="container" id="bookingForm">
+
+                <h6>Get started</h6>
+                <hr>
+                <form>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <mat-form-field appearance="fill" style="width:100%;">
+                                    <mat-label>Pickup Date</mat-label>
+                                    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-hint>Click the calendar icon</mat-hint>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <mat-form-field appearance="fill" style="width:100%;">
+                                    <mat-label>Dropoff Date</mat-label>
+                                    <input matInput [matDatepicker]="picker2" placeholder="Choose a date">
+                                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                    <mat-hint>Click the calendar icon</mat-hint>
+                                    <mat-datepicker #picker2></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <mat-form-field appearance="fill" style="width:100%;">
+                                    <mat-label>Contact Number</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>stay_current_portrait</mat-icon>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <mat-form-field appearance="fill" style="width:100%;">
+                                    <mat-label>Location Address</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>room</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <mat-form-field appearance="fill" style="width:100%;">
+                                    <mat-label>Current Email</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>email</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <mat-form-field appearance="fill" style="width:100%;">
+                                    <mat-label>Group Name</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                    <mat-icon matSuffix>group</mat-icon>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                    </form>
+                    <!--                 
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <mat-form-field appearance="fill">
+                                        <mat-label>Pickup Date</mat-label>
+                                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="form-group col">
+                                    <mat-form-field appearance="fill">
+                                        <mat-label>Dropoff Date</mat-label>
+                                        <input matInput [matDatepicker]="picker2" placeholder="Choose a date">
+                                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker2></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                            </div> -->
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <button mat-raised-button style="width:100%;" color="warn">
+                                    <mat-icon>settings_backup_restore</mat-icon> Reset
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button mat-raised-button style="width:100%;" color="primary">
+                                    <mat-icon>bookmark</mat-icon> Book
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form><br><br>
+            </div>
+        </mat-tab>
+
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">directions_car</mat-icon>
+                Car Selection
+            </ng-template>
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img class="card-img-top" src="../../../assets/img/me1.png" style="width:95%;height: 100%;"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nissan Sylphy</h5>
+                                    <p class="card-text">
+                                        <mat-icon style="position:relative;top:5px;">event_seat</mat-icon> 4 seats /
+                                        <mat-icon style="position:relative;top:5px;">attach_money</mat-icon>3,000 per
+                                        Day
+                                    </p>
+                                    <p class="card-text">
+                                        <mat-checkbox>Reserve</mat-checkbox>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img class="card-img-top" src="../../../assets/img/me2.png" style="width:95%;height: 100%;"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Toyota Vios</h5>
+                                    <p class="card-text">
+                                        <mat-icon style="position:relative;top:5px;">event_seat</mat-icon> 4 seats /
+                                        <mat-icon style="position:relative;top:5px;">attach_money</mat-icon>5,400 per
+                                        Day
+                                    </p>
+                                    <p class="card-text">
+                                        <mat-checkbox>Reserve</mat-checkbox>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <br>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img class="card-img-top" src="../../../assets/img/me3.png" style="width:95%;height: 100%;"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Toyota Innova</h5>
+                                    <p class="card-text">
+                                        <mat-icon style="position:relative;top:5px;">event_seat</mat-icon> 4 seats /
+                                        <mat-icon style="position:relative;top:5px;">attach_money</mat-icon>5,500 per
+                                        Day
+                                    </p>
+                                    <p class="card-text">
+                                        <mat-checkbox>Reserve</mat-checkbox>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img class="card-img-top" src="../../../assets/img/me4.png" style="width:95%;height: 100%;"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Toyota Fortuner</h5>
+                                    <p class="card-text">
+                                        <mat-icon style="position:relative;top:5px;">event_seat</mat-icon> 7 seats /
+                                        <mat-icon style="position:relative;top:5px;">attach_money</mat-icon>6,250 per
+                                        Day
+                                    </p>
+                                    <p class="card-text">
+                                        <mat-checkbox>Reserve</mat-checkbox>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><br>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img class="card-img-top" src="../../../assets/img/me5.png" style="width:95%;height: 100%;"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Toyota Camry</h5>
+                                    <p class="card-text">
+                                        <mat-icon style="position:relative;top:5px;">event_seat</mat-icon> 4 seats /
+                                        <mat-icon style="position:relative;top:5px;">attach_money</mat-icon>4,500 per
+                                        Day
+                                    </p>
+                                    <p class="card-text">
+                                        <mat-checkbox>Reserve</mat-checkbox>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <img class="card-img-top" src="../../../assets/img/me6.png" style="width:95%;height: 100%;"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fort Ecosport</h5>
+                                    <p class="card-text">
+                                        <mat-icon style="position:relative;top:5px;">event_seat</mat-icon> 4 seats /
+                                        <mat-icon style="position:relative;top:5px;">attach_money</mat-icon>4,500 per
+                                        Day
+                                    </p>
+                                    <p class="card-text">
+                                        <mat-checkbox>Reserve</mat-checkbox>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">details</mat-icon>
+                Booking Details
+            </ng-template> <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><mat-icon>calendar_today</mat-icon></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Pickup Date" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><mat-icon>calendar_today</mat-icon></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Dropoff Date" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><mat-icon>stay_current_portrait</mat-icon></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Contact Number" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><mat-icon>room</mat-icon></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Location Address" disabled>
+                            </div>
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><mat-icon>email</mat-icon></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Current Email" disabled>
+                                </div>
+                                <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><mat-icon>group</mat-icon></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Groupname" disabled>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><mat-icon>attach_money</mat-icon></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Total Cost" disabled>
+                                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+
+        </mat-tab>
+
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">attach_money</mat-icon>
+                Payment Section
+            </ng-template>
+
+            Content 3
+        </mat-tab>
+    </mat-tab-group>
+
+</div>

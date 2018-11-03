@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" (click)="drawer.toggle()" style="color:#FF9B0A;font-family: 'Orbitron', sans-serif;">
+      <mat-icon style="position: relative;top:5px;color:white !important;">menu</mat-icon> FamGO
+    </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <h6 [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </h6>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/home">
+          <mat-icon>power_settings_new</mat-icon>
+          <span>Logout</span>
+        </button>
+
+        <button mat-menu-item>
+          <mat-icon>edit_attributes</mat-icon>
+          <span>My Account</span>
+        </button>
+      </mat-menu>
+    </form>
+  </div>
+</nav>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <ul class="list-group">
+      <li class="list-group-item" routerLink="booking"><img src="../../../assets/img/car.png" class="sideNavIcon"> Book
+        my Car</li>
+      <li class="list-group-item" routerLink="destination"><img src="../../../assets/img/map.png" class="sideNavIcon"> Destination Guide</li>
+      <li class="list-group-item" routerLink="dashboard"><img src="../../../assets/img/home.png" class="sideNavIcon">
+        Dashboard</li>
+      <li class="list-group-item"  routerLink="bookingHistory"><img src="../../../assets/img/history.png" class="sideNavIcon"> Booking History</li>
+      <li class="list-group-item"><img src="../../../assets/img/man.png" class="sideNavIcon"> My Account</li>
+      <li class="list-group-item">
+        <hr>  
+      </li>
+      <li class="list-group-item"><img src="../../../assets/img/technical-support.png" class="sideNavIcon"> Support</li>
+      <li class="list-group-item"><img src="../../../assets/img/beetle.png" class="sideNavIcon"> Report bugs</li>
+    </ul>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>

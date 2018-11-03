@@ -1,0 +1,26 @@
+.container {
+    float: center;
+    box-shadow:  1px 1px 5px #292931;
+    width: 35%;
+    margin-top: 50px;
+    padding: 2em;
+    font-size: 15px;
+
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  p {
+    font-size: 20px !important;
+    font-family: 'Orbitron', sans-serif;
+
+  }
+  
